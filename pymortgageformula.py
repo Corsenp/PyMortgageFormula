@@ -1,6 +1,9 @@
 
 def fixed_monthly_payments_formula(P, r, n):
     print("fixed_monthly_payments_formula def")
+    r = float(r)
+    P = float(P)
+    n = int(n)
     top = (1 + r)**n
     bottom = ((1 + r)**n - 1)
     result = top / bottom
@@ -43,9 +46,13 @@ def main():
     r = get_interest_rate()
     n = get_number_months()
 
-    print("P = %s"% P)
-    print("r = %s"% r)
-    print("n = %s"% n)
+    try:
+        result = fixed_monthly_payments_formula(P, r, n)
+        print(result)
+    
+    except:
+        print("ERROR while calculating the fixed_monthly_payments_formula")
+        return
 
     
 
