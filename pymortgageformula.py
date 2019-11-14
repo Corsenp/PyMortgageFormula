@@ -1,4 +1,5 @@
 
+# calculating the fixed monthly payments
 def fixed_monthly_payments_formula(P, r, n):
     top = (1 + r)**n
     bottom = (((1 + r)**n) - 1)
@@ -6,6 +7,7 @@ def fixed_monthly_payments_formula(P, r, n):
     result = P * r * division
     return result
 
+# get the principal of the loan
 def get_principal():
     P = input("What is the principal ?\n")
 
@@ -16,6 +18,7 @@ def get_principal():
     except ValueError:
         print("ERROR : not a correct Value\n")
 
+# get the monthly interest rate of the loan
 def get_interest_rate():
     r = input("What is the monthly interest rate ?\n")
 
@@ -27,6 +30,7 @@ def get_interest_rate():
         print("ERROR : Not a correct Value\n")
         get_interest_rate()
 
+# get the number of months
 def get_number_months():
     n = input("What is the number of months\n")
 
