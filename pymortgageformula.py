@@ -34,7 +34,7 @@ def get_outstanding_month():
         return m
 
     except ValueError:
-        get_oustanding_month()
+        get_outstanding_month()
 
 # get the monthly interest rate of the loan
 def get_interest_rate():
