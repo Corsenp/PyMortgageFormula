@@ -1,19 +1,16 @@
 
 def fixed_monthly_payments_formula(P, r, n):
-    print("fixed_monthly_payments_formula def")
-    r = float(r)
-    P = float(P)
-    n = int(n)
     top = (1 + r)**n
     bottom = ((1 + r)**n - 1)
-    result = top / bottom
+    division = top / bottom
+    result = P * r * division
     return result
 
 def get_principal():
     P = input("What is the principal ?\n")
 
     try:
-        float(P)
+        P = int(P)
         return P
 
     except ValueError:
@@ -23,7 +20,7 @@ def get_interest_rate():
     r = input("What is the monthly interest rate ?\n")
 
     try:
-        float(r)
+        r = float(r)
         return r
     
     except ValueError:
@@ -34,7 +31,7 @@ def get_number_months():
     n = input("What is the number of months\n")
 
     try:
-        float(n)
+        n = int(n)
         return n
 
     except ValueError:
