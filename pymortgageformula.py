@@ -24,6 +24,7 @@ def get_principal():
 
     except ValueError:
         print("ERROR : not a correct Value\n")
+        return get_principal()
 
 # get the outstanding month
 def get_outstanding_month():
@@ -34,6 +35,7 @@ def get_outstanding_month():
         return m
 
     except ValueError:
+        print("ERROR : not a correct Value\n")
         return get_outstanding_month()
 
 # get the monthly interest rate of the loan
