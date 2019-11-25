@@ -1,6 +1,6 @@
 # PyMortgageFormula
 
-PyMortGageFormula is a school project where we must calculate two things: 
+PyMortGageFormula (Assignment 7) is a school project where we must calculate two things: 
 
 First the Fixed Monthly Payments and the Outstanding Loan Balance
 
